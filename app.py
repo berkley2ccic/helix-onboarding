@@ -1419,7 +1419,7 @@ body{font-family:Inter,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif;back
 
 <div class="footer">
   W.R. Berkley Corporation &bull; Carolina Casualty Insurance Company &bull; Helix Enterprise Data Platform<br>
-  <span style="margin-top:4px;display:inline-block;">Prepared by Krish Kilaru | VP, Data &amp; Analytics</span>
+  <span style="margin-top:4px;display:inline-block;">Prepared by Krish Kilaru | Candidate, VP Data &amp; Analytics</span>
 </div>
 
 <script>
