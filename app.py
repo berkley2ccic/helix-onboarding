@@ -23,7 +23,7 @@ HTML_PAGE = r"""<!DOCTYPE html>
 <style>
 :root{--bg:#0b1120;--surface:#111d35;--surface2:#162544;--accent:#0ea5e9;--accent2:#8b5cf6;--accent3:#10b981;--warn:#f59e0b;--red:#ef4444;--text:#e2e8f0;--muted:#94a3b8;--dim:#64748b;--border:#1e3a5f;--gold:#fbbf24}
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:Inter,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif;background:var(--bg);color:var(--text);min-height:100vh;line-height:1.6}
+body{font-family:Inter,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;margin:0;padding:0}
 .header{background:linear-gradient(135deg,#0b1120,#1a2744,#0f2035);padding:44px 24px 28px;text-align:center;border-bottom:1px solid var(--border)}
 .header-logo{font-size:11px;text-transform:uppercase;letter-spacing:3px;color:var(--accent);margin-bottom:10px;font-weight:600}
 .header h1{font-size:34px;color:#fff;margin-bottom:8px;font-weight:700}
@@ -79,7 +79,7 @@ body{font-family:Inter,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif;back
 .cta{text-align:center;margin:36px 0 16px}
 .cta-btn{display:inline-block;padding:13px 28px;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer;border:none;transition:transform .2s,box-shadow .2s;text-decoration:none}
 .cta-btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(14,165,233,.2)}
-.footer{text-align:center;padding:28px 24px;color:var(--dim);font-size:11px;border-top:1px solid var(--border);margin-top:50px}
+.footer{text-align:center;padding:20px 24px;color:var(--dim);font-size:11px;border-top:1px solid var(--border);margin-top:20px}
 /* Additional styles for Onboarding tab */
 .section-divider{border:none;border-top:1px solid var(--border);margin:36px 0}
 .section-num{font-size:11px;text-transform:uppercase;letter-spacing:2px;color:var(--accent2);margin-bottom:8px;font-weight:600}
@@ -1481,9 +1481,16 @@ function go(i){
   document.getElementById('p'+i).classList.add('active');
   document.querySelectorAll('.nav-btn')[i].classList.add('active');
   window.scrollTo({top:0,behavior:'smooth'});
+  setTimeout(resizeFrame,100);
 }
+function resizeFrame(){
+  var h=document.documentElement.scrollHeight;
+  if(window.frameElement){window.frameElement.style.height=h+'px';}
+  window.parent.postMessage({type:'streamlit:setFrameHeight',height:h},'*');
+}
+window.addEventListener('load',function(){setTimeout(resizeFrame,200);});
 </script>
 </body>
 </html>"""
 
-st.components.v1.html(HTML_PAGE, height=3200, scrolling=True)
+st.components.v1.html(HTML_PAGE, height=5000, scrolling=False)
