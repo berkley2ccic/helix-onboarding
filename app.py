@@ -581,22 +581,22 @@ body{font-family:Inter,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif;back
 <!-- GOVERNANCE -->
 <div class="panel" id="p3">
   <div class="badge">Data Governance &amp; Standards Alignment</div>
-  <h2 class="page-title">Governance for Commercial Trucking</h2>
-  <p class="page-sub">Adopting enterprise governance policies, quality standards, metadata management, and lineage practices &mdash; within a segment where &ldquo;written premium&rdquo; means three things and nobody owns the telematics data.</p>
+  <h2 class="page-title">Governance for Commercial Auto Insurance</h2>
+  <p class="page-sub">Adopting enterprise governance policies, quality standards, metadata management, and lineage practices &mdash; across liability, physical damage, cargo, and specialty lines where &ldquo;written premium&rdquo; means three things and nobody owns the telematics data.</p>
 
   <!-- HATS -->
   <div class="hat-grid">
-    <div class="hat"><div class="hat-icon">&#127942;</div><div class="hat-title">Champion</div><div class="hat-desc">Drive adoption of governance policies &mdash; make them useful, not bureaucratic</div></div>
-    <div class="hat"><div class="hat-icon">&#129309;</div><div class="hat-title">Partner</div><div class="hat-desc">Work across OUs and corporate teams to define domains and stewardship</div></div>
-    <div class="hat"><div class="hat-icon">&#128737;</div><div class="hat-title">Enforcer</div><div class="hat-desc">Ensure pipelines and data products meet Helix standards and compliance</div></div>
-    <div class="hat"><div class="hat-icon">&#128220;</div><div class="hat-title">Definer</div><div class="hat-desc">Drive consistent business glossary so analytics actually mean something</div></div>
+    <div class="hat"><div class="hat-icon">&#127942;</div><div class="hat-title">Champion</div><div class="hat-desc">Champion adoption of enterprise governance policies, quality standards, and lineage practices</div></div>
+    <div class="hat"><div class="hat-icon">&#129309;</div><div class="hat-title">Partner</div><div class="hat-desc">Partner with other OU data stewards and corporate governance teams to define domains and ownership</div></div>
+    <div class="hat"><div class="hat-icon">&#128737;</div><div class="hat-title">Enforcer</div><div class="hat-desc">Ensure all data products and pipelines adhere to Helix platform standards, security, and compliance</div></div>
+    <div class="hat"><div class="hat-icon">&#128220;</div><div class="hat-title">Definer</div><div class="hat-desc">Drive consistent data definitions and business glossary to enable accurate segment-level reporting</div></div>
   </div>
 
   <hr class="section-divider">
 
   <!-- COMMERCIAL TRUCKING DATA DOMAINS -->
-  <div class="section-num">Commercial Trucking Data Domains</div>
-  <p style="font-size:15px;color:var(--muted);margin-bottom:16px;">Each domain needs a named steward, agreed definitions, quality standards, and clear ownership boundaries.</p>
+  <div class="section-num">Commercial Auto Data Domains</div>
+  <p style="font-size:15px;color:var(--muted);margin-bottom:16px;">Each domain &mdash; spanning trucking, public transportation, and specialty commercial auto &mdash; needs a named steward, agreed definitions, quality standards, and clear ownership boundaries.</p>
 
   <div style="margin:20px 0;padding:24px;background:var(--surface);border:1px solid var(--border);border-radius:14px;overflow-x:auto;">
     <svg viewBox="0 0 900 240" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:900px;display:block;margin:0 auto;">
