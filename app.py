@@ -1493,4 +1493,4 @@ window.addEventListener('load',function(){setTimeout(resizeFrame,200);});
 </body>
 </html>"""
 
-st.html(HTML_PAGE, height=5000)
+st.components.v1.html(HTML_PAGE, height=5000, scrolling=False)
