@@ -1446,7 +1446,9 @@ body{font-family:Inter,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif;back
     </tbody>
   </table>
 
-  <!-- PUBLISHED WORK -->
+</div>
+
+<!-- PUBLISHED WORK -->
 <div class="panel" id="p7">
   <div class="badge">SQL Server to Databricks &bull; 15-Part LinkedIn Series</div>
   <h2 class="page-title">Published Work</h2>
