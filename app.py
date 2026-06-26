@@ -10,6 +10,9 @@ st.markdown("""
     .block-container {padding:0 !important; max-width:100% !important;}
     [data-testid="stAppViewContainer"] {padding:0;}
     iframe {border:none;}
+
+.toggle-rachel{position:fixed;top:12px;right:16px;z-index:999;background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:6px 12px;color:var(--muted);font-size:12px;cursor:pointer;opacity:0.7;transition:opacity .2s}
+.toggle-rachel:hover{opacity:1;color:var(--text)}
 </style>
 """, unsafe_allow_html=True)
 
@@ -114,6 +117,8 @@ body{font-family:Inter,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif;back
 </style>
 </head>
 <body>
+<button class="toggle-rachel" onclick="toggleRachel()" id="rachelBtn">&#128065; Hide Interview Context</button>
+
 
 <div class="header">
   <div class="header-logo">W.R. Berkley Corporation</div>
@@ -148,7 +153,7 @@ body{font-family:Inter,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif;back
         <div style="font-size:13px;color:var(--accent);">VP, Data &amp; Analytics</div>
         <div style="font-size:12px;color:var(--dim);margin-top:2px;">Candidate</div>
       </div>
-      <div style="text-align:center;">
+      <span id="rachelSection" style="display:inline-flex;align-items:center;gap:48px;"><div style="text-align:center;">
         <div style="font-size:28px;color:var(--dim);">&#8596;</div>
         <div style="font-size:12px;color:var(--dim);margin-top:4px;">First Meeting</div>
       </div>
@@ -157,7 +162,7 @@ body{font-family:Inter,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif;back
         <div style="margin-top:10px;font-size:15px;font-weight:600;color:#fff;">Rachel Tison</div>
         <div style="font-size:13px;color:var(--accent2);">VP, Systems &amp; Integrations</div>
         <div style="font-size:12px;color:var(--dim);margin-top:2px;">Interviewer</div>
-      </div>
+      </div></span>
     </div>
   </div>
 
@@ -208,7 +213,90 @@ body{font-family:Inter,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif;back
 
   <hr class="section-divider">
 
+    <hr class="section-divider">
+
+  <!-- SIX-PHASE APPROACH -->
+  <div class="section-num">Six-Phase Approach</div>
+  <p style="font-size:15px;color:var(--muted);margin-bottom:20px;">Every business unit is different. Rather than a one-size-fits-all migration, I follow a structured six-phase approach &mdash; adapting pace, scope, and sequencing to where the organization actually is.</p>
+
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:20px 0;">
+    <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:18px;border-left:3px solid #0ea5e9;">
+      <div style="font-size:13px;color:#0ea5e9;font-weight:700;margin-bottom:6px;">PHASE 1</div>
+      <div style="font-size:15px;font-weight:600;color:#fff;margin-bottom:8px;">Discovery &amp; Assessment</div>
+      <div style="font-size:14px;color:var(--muted);line-height:1.6;">Understand the business before talking technology. Assess data architecture, critical processes, existing reports, data quality, governance maturity, and stakeholder readiness.</div>
+    </div>
+    <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:18px;border-left:3px solid #8b5cf6;">
+      <div style="font-size:13px;color:#8b5cf6;font-weight:700;margin-bottom:6px;">PHASE 2</div>
+      <div style="font-size:15px;font-weight:600;color:#fff;margin-bottom:8px;">Business Alignment</div>
+      <div style="font-size:14px;color:var(--muted);line-height:1.6;">Identify executive sponsors, business champions, and engineering leads. Align on objectives, success metrics, scope, timeline, risks, and responsibilities. If alignment doesn&rsquo;t happen here, everything downstream gets harder.</div>
+    </div>
+    <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:18px;border-left:3px solid #f59e0b;">
+      <div style="font-size:13px;color:#f59e0b;font-weight:700;margin-bottom:6px;">PHASE 3</div>
+      <div style="font-size:15px;font-weight:600;color:#fff;margin-bottom:8px;">Gap Assessment &amp; Roadmap</div>
+      <div style="font-size:14px;color:var(--muted);line-height:1.6;">Compare current environment with enterprise standards. Identify gaps in data quality, governance, security, metadata, lineage, platform capabilities, and skills. Prioritize into short-, medium-, and long-term milestones.</div>
+    </div>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:0 0 20px 0;">
+    <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:18px;border-left:3px solid #10b981;">
+      <div style="font-size:13px;color:#10b981;font-weight:700;margin-bottom:6px;">PHASE 4</div>
+      <div style="font-size:15px;font-weight:600;color:#fff;margin-bottom:8px;">Migration &amp; Modernization</div>
+      <div style="font-size:14px;color:var(--muted);line-height:1.6;">Phased rollout &mdash; not everything at once. Start with lower-risk workloads to build confidence, validate architecture, and demonstrate quick wins before moving critical systems.</div>
+    </div>
+    <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:18px;border-left:3px solid #ef4444;">
+      <div style="font-size:13px;color:#ef4444;font-weight:700;margin-bottom:6px;">PHASE 5</div>
+      <div style="font-size:15px;font-weight:600;color:#fff;margin-bottom:8px;">Adoption &amp; Change Management</div>
+      <div style="font-size:14px;color:var(--muted);line-height:1.6;">Technology alone doesn&rsquo;t create transformation. Training, workshops, sandbox environments, office hours, executive communication, and success stories &mdash; using the ADKAR framework to drive organizational change.</div>
+    </div>
+    <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:18px;border-left:3px solid #06b6d4;">
+      <div style="font-size:13px;color:#06b6d4;font-weight:700;margin-bottom:6px;">PHASE 6</div>
+      <div style="font-size:15px;font-weight:600;color:#fff;margin-bottom:8px;">Continuous Improvement</div>
+      <div style="font-size:14px;color:var(--muted);line-height:1.6;">Transformation doesn&rsquo;t end when migration ends. Monitor adoption, platform performance, data quality, user satisfaction, and business outcomes. Iterate and refine.</div>
+    </div>
+  </div>
+
+
   <!-- Key context -->
+  <hr class="section-divider">
+
+  <!-- SIX-PHASE APPROACH -->
+  <div class="section-num">Six-Phase Approach</div>
+  <p style="font-size:15px;color:var(--muted);margin-bottom:20px;">Every business unit is different. Rather than a one-size-fits-all migration, I follow a structured six-phase approach &mdash; adapting pace, scope, and sequencing to where the organization actually is.</p>
+
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:20px 0;">
+    <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:18px;border-left:3px solid #0ea5e9;">
+      <div style="font-size:13px;color:#0ea5e9;font-weight:700;margin-bottom:6px;">PHASE 1</div>
+      <div style="font-size:15px;font-weight:600;color:#fff;margin-bottom:8px;">Discovery &amp; Assessment</div>
+      <div style="font-size:14px;color:var(--muted);line-height:1.6;">Understand the business before talking technology. Assess data architecture, critical processes, existing reports, data quality, governance maturity, and stakeholder readiness.</div>
+    </div>
+    <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:18px;border-left:3px solid #8b5cf6;">
+      <div style="font-size:13px;color:#8b5cf6;font-weight:700;margin-bottom:6px;">PHASE 2</div>
+      <div style="font-size:15px;font-weight:600;color:#fff;margin-bottom:8px;">Business Alignment</div>
+      <div style="font-size:14px;color:var(--muted);line-height:1.6;">Identify executive sponsors, business champions, and engineering leads. Align on objectives, success metrics, scope, timeline, risks, and responsibilities.</div>
+    </div>
+    <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:18px;border-left:3px solid #f59e0b;">
+      <div style="font-size:13px;color:#f59e0b;font-weight:700;margin-bottom:6px;">PHASE 3</div>
+      <div style="font-size:15px;font-weight:600;color:#fff;margin-bottom:8px;">Gap Assessment &amp; Roadmap</div>
+      <div style="font-size:14px;color:var(--muted);line-height:1.6;">Compare current environment with enterprise standards. Identify gaps in quality, governance, security, metadata, lineage, and skills. Prioritize into short-, medium-, and long-term milestones.</div>
+    </div>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:0 0 20px 0;">
+    <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:18px;border-left:3px solid #10b981;">
+      <div style="font-size:13px;color:#10b981;font-weight:700;margin-bottom:6px;">PHASE 4</div>
+      <div style="font-size:15px;font-weight:600;color:#fff;margin-bottom:8px;">Migration &amp; Modernization</div>
+      <div style="font-size:14px;color:var(--muted);line-height:1.6;">Phased rollout &mdash; not everything at once. Start with lower-risk workloads to build confidence, validate architecture, and demonstrate quick wins before moving critical systems.</div>
+    </div>
+    <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:18px;border-left:3px solid #ef4444;">
+      <div style="font-size:13px;color:#ef4444;font-weight:700;margin-bottom:6px;">PHASE 5</div>
+      <div style="font-size:15px;font-weight:600;color:#fff;margin-bottom:8px;">Adoption &amp; Change Management</div>
+      <div style="font-size:14px;color:var(--muted);line-height:1.6;">Technology alone doesn&rsquo;t create transformation. Training, workshops, sandbox environments, office hours, and executive communication &mdash; using the ADKAR framework to drive organizational change.</div>
+    </div>
+    <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:18px;border-left:3px solid #06b6d4;">
+      <div style="font-size:13px;color:#06b6d4;font-weight:700;margin-bottom:6px;">PHASE 6</div>
+      <div style="font-size:15px;font-weight:600;color:#fff;margin-bottom:8px;">Continuous Improvement</div>
+      <div style="font-size:14px;color:var(--muted);line-height:1.6;">Transformation doesn&rsquo;t end when migration ends. Monitor adoption, platform performance, data quality, user satisfaction, and business outcomes. Iterate and refine.</div>
+    </div>
+  </div>
+
   <div class="section-num">Key Context</div>
   <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:20px 0;">
     <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:18px;">
@@ -1489,6 +1577,18 @@ function resizeFrame(){
   window.parent.postMessage({type:'streamlit:setFrameHeight',height:h},'*');
 }
 window.addEventListener('load',function(){setTimeout(resizeFrame,200);});
+
+function toggleRachel(){
+  var s=document.getElementById('rachelSection');
+  var b=document.getElementById('rachelBtn');
+  if(s.style.display==='none'){
+    s.style.display='inline-flex';
+    b.innerHTML='&#128065; Hide Interview Context';
+  } else {
+    s.style.display='none';
+    b.innerHTML='&#128065; Show Interview Context';
+  }
+}
 </script>
 </body>
 </html>"""
