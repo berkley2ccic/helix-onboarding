@@ -170,7 +170,7 @@ body{font-family:Inter,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif;back
   <div style="text-align:center;margin-bottom:28px;">
     <div class="badge">Carolina Casualty &bull; Helix Platform Adoption</div>
     <h2 style="font-size:24px;color:#fff;margin:12px 0 8px;font-weight:700;">From Legacy Stack to Enterprise Data Platform</h2>
-    <p style="font-size:16px;color:var(--muted);max-width:700px;margin:0 auto;line-height:1.7;">A structured approach to onboarding CCIC &mdash; liability, physical damage, cargo, and commercial auto &mdash; onto the Helix enterprise data platform. What to assess, what to build first, and how to prove value without disrupting a business that&rsquo;s already running.</p>
+    <p style="font-size:16px;color:var(--muted);max-width:700px;margin:0 auto;line-height:1.7;">CCIC has 3 data warehouses from acquisitions, a SQL Server legacy stack, and a corporate mandate to consolidate onto Databricks. This is a structured approach to onboarding &mdash; what to assess, what to build first, and how to prove value without disrupting a business that&rsquo;s already running.</p>
   </div>
 
   <!-- Transformation image -->
