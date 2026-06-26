@@ -278,6 +278,76 @@ body{font-family:Inter,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif;back
     </div>
   </div>
 
+
+  <hr class="section-divider">
+
+  <!-- PUBLISHED WORK -->
+  <div class="section-num">Published Work: SQL Server to Databricks Migration</div>
+  <p style="font-size:15px;color:var(--muted);margin-bottom:16px;">A 15-episode LinkedIn series covering end-to-end SQL Server to Databricks migration &mdash; from architecture foundations through cutover execution.</p>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:16px 0;">
+    <a href="https://www.linkedin.com/pulse/episode-1-sql-server-databricks-conversation-every-engineer-krish-k-t6v1e/" target="_blank" style="text-decoration:none;background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:12px 16px;display:flex;align-items:center;gap:10px;transition:border-color .2s;">
+      <span style="font-size:13px;font-weight:700;color:var(--accent);min-width:28px;">01</span>
+      <span style="font-size:14px;color:var(--text);">Foundations &mdash; The Conversation Every Engineer Needs</span>
+    </a>
+    <a href="https://www.linkedin.com/pulse/episode-2-sql-server-databricks-migration-krish-k-rnbee/" target="_blank" style="text-decoration:none;background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:12px 16px;display:flex;align-items:center;gap:10px;transition:border-color .2s;">
+      <span style="font-size:13px;font-weight:700;color:var(--accent);min-width:28px;">02</span>
+      <span style="font-size:14px;color:var(--text);">Architecture &amp; Platform Comparison</span>
+    </a>
+    <a href="https://www.linkedin.com/pulse/episode-3-sql-server-databricks-migration-series-krish-k-49jve/" target="_blank" style="text-decoration:none;background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:12px 16px;display:flex;align-items:center;gap:10px;transition:border-color .2s;">
+      <span style="font-size:13px;font-weight:700;color:var(--accent);min-width:28px;">03</span>
+      <span style="font-size:14px;color:var(--text);">Delta Lake &amp; Lakehouse Fundamentals</span>
+    </a>
+    <a href="https://www.linkedin.com/pulse/episode-4-sql-server-databricks-migration-series-krish-k-y202e/" target="_blank" style="text-decoration:none;background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:12px 16px;display:flex;align-items:center;gap:10px;transition:border-color .2s;">
+      <span style="font-size:13px;font-weight:700;color:var(--accent);min-width:28px;">04</span>
+      <span style="font-size:14px;color:var(--text);">Unity Catalog &amp; Governance</span>
+    </a>
+    <a href="https://www.linkedin.com/pulse/episode-5-discover-sql-server-databricks-migration-krish-k-lfdoe/" target="_blank" style="text-decoration:none;background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:12px 16px;display:flex;align-items:center;gap:10px;transition:border-color .2s;">
+      <span style="font-size:13px;font-weight:700;color:var(--accent);min-width:28px;">05</span>
+      <span style="font-size:14px;color:var(--text);">Discovery &mdash; Assessment &amp; Inventory</span>
+    </a>
+    <a href="https://www.linkedin.com/pulse/episode-6-discover-sql-server-databricks-migration-series-krish-k-bx41e/" target="_blank" style="text-decoration:none;background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:12px 16px;display:flex;align-items:center;gap:10px;transition:border-color .2s;">
+      <span style="font-size:13px;font-weight:700;color:var(--accent);min-width:28px;">06</span>
+      <span style="font-size:14px;color:var(--text);">Discovery &mdash; Workload Analysis</span>
+    </a>
+    <a href="https://www.linkedin.com/pulse/episode-7-sql-server-databricks-migration-series-krish-k-prz9e/" target="_blank" style="text-decoration:none;background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:12px 16px;display:flex;align-items:center;gap:10px;transition:border-color .2s;">
+      <span style="font-size:13px;font-weight:700;color:var(--accent);min-width:28px;">07</span>
+      <span style="font-size:14px;color:var(--text);">Discovery &mdash; Roadmap &amp; Planning</span>
+    </a>
+    <a href="https://www.linkedin.com/pulse/episode-8-sql-server-databricks-migration-series-krish-k-g31we/" target="_blank" style="text-decoration:none;background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:12px 16px;display:flex;align-items:center;gap:10px;transition:border-color .2s;">
+      <span style="font-size:13px;font-weight:700;color:var(--accent);min-width:28px;">08</span>
+      <span style="font-size:14px;color:var(--text);">Execute &mdash; Schema &amp; DDL Conversion</span>
+    </a>
+    <a href="https://www.linkedin.com/pulse/episode-9-sql-server-databricks-migration-series-krish-k-859be/" target="_blank" style="text-decoration:none;background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:12px 16px;display:flex;align-items:center;gap:10px;transition:border-color .2s;">
+      <span style="font-size:13px;font-weight:700;color:var(--accent);min-width:28px;">09</span>
+      <span style="font-size:14px;color:var(--text);">Execute &mdash; Data Migration &amp; Ingestion</span>
+    </a>
+    <a href="https://www.linkedin.com/pulse/episode-10-sql-server-databricks-migration-series-krish-k-seqee/" target="_blank" style="text-decoration:none;background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:12px 16px;display:flex;align-items:center;gap:10px;transition:border-color .2s;">
+      <span style="font-size:13px;font-weight:700;color:var(--accent);min-width:28px;">10</span>
+      <span style="font-size:14px;color:var(--text);">Execute &mdash; Incremental Sync &amp; CDC</span>
+    </a>
+    <a href="https://www.linkedin.com/pulse/episode-11-sql-server-databricks-migration-series-krish-k-dxz9e/" target="_blank" style="text-decoration:none;background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:12px 16px;display:flex;align-items:center;gap:10px;transition:border-color .2s;">
+      <span style="font-size:13px;font-weight:700;color:var(--accent);min-width:28px;">11</span>
+      <span style="font-size:14px;color:var(--text);">Execute &mdash; SQL &amp; Code Conversion</span>
+    </a>
+    <a href="https://www.linkedin.com/pulse/episode-12-sql-server-databricks-migration-series-krish-k-30cue/" target="_blank" style="text-decoration:none;background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:12px 16px;display:flex;align-items:center;gap:10px;transition:border-color .2s;">
+      <span style="font-size:13px;font-weight:700;color:var(--accent);min-width:28px;">12</span>
+      <span style="font-size:14px;color:var(--text);">Execute &mdash; Pipeline &amp; Orchestration</span>
+    </a>
+    <a href="https://www.linkedin.com/pulse/episode-13-sql-server-databricks-migration-series-krish-k-fkvje/" target="_blank" style="text-decoration:none;background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:12px 16px;display:flex;align-items:center;gap:10px;transition:border-color .2s;">
+      <span style="font-size:13px;font-weight:700;color:var(--accent);min-width:28px;">13</span>
+      <span style="font-size:14px;color:var(--text);">Activate &mdash; Testing &amp; Data Validation</span>
+    </a>
+    <a href="https://www.linkedin.com/pulse/episode-14-sql-server-databricks-migration-series-krish-k-6lbte/" target="_blank" style="text-decoration:none;background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:12px 16px;display:flex;align-items:center;gap:10px;transition:border-color .2s;">
+      <span style="font-size:13px;font-weight:700;color:var(--accent);min-width:28px;">14</span>
+      <span style="font-size:14px;color:var(--text);">Activate &mdash; Observability &amp; Performance</span>
+    </a>
+    <a href="https://www.linkedin.com/pulse/episode-15-sql-server-databricks-migration-series-krish-k-islee/" target="_blank" style="text-decoration:none;background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:12px 16px;display:flex;align-items:center;gap:10px;transition:border-color .2s;">
+      <span style="font-size:13px;font-weight:700;color:var(--accent);min-width:28px;">15</span>
+      <span style="font-size:14px;color:var(--text);">Activate &mdash; Cutover Execution</span>
+    </a>
+  </div>
+
 </div>
 
 <!-- ONBOARDING -->
